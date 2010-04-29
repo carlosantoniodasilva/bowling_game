@@ -1,8 +1,8 @@
 require 'test_helper'
 
-class GameTest < Test::Unit::TestCase
+class TestGame < Test::Unit::TestCase
   def setup
-    @game = Game.new
+    @game = BowlingGame.new
   end
 
   def test_gutter_game
