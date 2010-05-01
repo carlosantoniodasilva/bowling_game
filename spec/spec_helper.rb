@@ -1,4 +1,4 @@
 require 'rubygems'
-require 'test/unit'
+require 'spec'
 
 require 'bowling_game'

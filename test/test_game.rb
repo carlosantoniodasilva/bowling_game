@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class TestGame < Test::Unit::TestCase
+
   def setup
     @game = BowlingGame.new
   end
@@ -38,9 +39,7 @@ class TestGame < Test::Unit::TestCase
   private
 
   def roll_many(n, pins)
-    1.upto(n) do
-      @game.roll(pins)
-    end
+    n.times { @game.roll(pins) }
   end
 
   def roll_spare
